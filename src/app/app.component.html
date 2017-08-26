@@ -1,24 +1,38 @@
 <nav>
-    <ul>
-        <li>
-            <a routerLink="/">Home</a>
-        </li>
-        <li>
-            <a routerLink="/profile">Profile</a>
-        </li>
-        <li>
-            <a routerLink="/login">Login</a>
-        </li>
-        <li>
-            <a routerLink="/signup">Sign Up</a>
-        </li>
-        <li>
-            <a routerLink="/qa">FAQ</a>
-        </li>
-        <li>
-          <a routerLink="/chat">Chat</a>
-        </li>  
-    </ul>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Diagnosis A.I.</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        <ul class="right hide-on-med-and-down">
+            <li>
+                <a routerLink="/signup">Sign Up</a>
+            </li>
+            <li>
+                <a routerLink="/profile">Profile</a>
+            </li>
+            <li>
+                <a routerLink="/qa">FAQ</a>
+            </li>
+            <li>
+              <a routerLink="/chat">Chat</a>
+            </li>
+        </ul>
+
+        <ul class="side-nav" id="mobile-demo">
+            <li>
+                <a routerLink="/signup">Sign Up</a>
+            </li>
+            <li>
+                <a routerLink="/profile">Profile</a>
+            </li>
+            <li>
+                <a routerLink="/qa">FAQ</a>
+            </li>
+            <li>
+              <a routerLink="/chat">Chat</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <router-outlet></router-outlet>
