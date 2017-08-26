@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
+## Contributors
+
+Mark Kleinfelder (https://github.com/MarkKleinfelder) & Ian T. Nordeck (https://github.com/inordeck)
+
+## Wireframes
+
+![WIREFRAMES](/diagnosis-ai-wireframes.jpg)
+
+## Styleguide
+
+![STYLEGUIDE](/diagnostic-ai-styles-01.jpg)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
