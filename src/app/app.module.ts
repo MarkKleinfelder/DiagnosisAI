@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 import { RouterModule } from '@angular/router'
+import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -11,6 +12,8 @@ import { QAComponent } from './q-a/q-a.component';
 import { ChatComponent } from './chat/chat.component';
 import { LinksComponent } from './links/links.component';
 
+import { PatientDetailsComponent } from './patient-details/patient-details.component'
+import { PatientService }  from './patient.service';
 
 
 
@@ -22,11 +25,13 @@ import { LinksComponent } from './links/links.component';
     ProfileComponent,
     QAComponent,
     ChatComponent,
-    LinksComponent
+    LinksComponent,
+    PatientDetailsComponent
   ],
   imports: [
     BrowserModule,
     MaterializeModule,
+    FormsModule,
     RouterModule.forRoot([
       {
         path:'profile',
@@ -53,7 +58,7 @@ import { LinksComponent } from './links/links.component';
     
 
   ],
-  providers: [],
+  providers: [PatientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

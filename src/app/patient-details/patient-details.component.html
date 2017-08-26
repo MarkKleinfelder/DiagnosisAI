@@ -1,0 +1,12 @@
+<h2>Patient Details</h2>
+
+
+<div *ngIf="patient">
+			  <h2>{{patient.name}}</h2>
+			  <div><label>id: </label>{{patient.id}}
+			</div>
+			<div>
+			   <label>name: </label>
+			   <input [(ngModel)]='patient.name' placeholder='name'/>
+		    </div>
+			</div>
