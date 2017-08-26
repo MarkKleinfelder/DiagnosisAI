@@ -1,7 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 
+/*
+TYPOGRAPHY
+font-family: 'Raleway', sans-serif;
+font-weight: 200, 400, 700;
+font-style: italic;
+*/
+
+/*
+COLOR PALETTE:
+primary color:
+indigo = #263172
+light indigo = #9398b8
+
+secondary color:
+cyan = #29abe2
+light cyan = #94d5f1
+
+neutrals:
+warm gray 900 = #867d78
+warm gray 700 = #9b928d
+warm gray 500 = #ada7a4
+warm gray 300 = #c0bbb7
+warm gray 100 = #e4e0d8
+*/
+
 body{
+	font-family: 'Raleway', sans-serif;
     background: #E0EAFC;
     background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
     background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
 }
+
