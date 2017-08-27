@@ -1,0 +1,85 @@
+/*
+TYPOGRAPHY USED:
+font-family: 'Raleway', sans-serif;
+font-weight: 200, 400, 700;
+font-style: italic;
+*/
+
+/*
+COLOR PALETTE USED:
+primary color:
+indigo = #263172
+light indigo = #9398b8
+
+secondary color:
+cyan = #29abe2
+light cyan = #94d5f1
+
+neutrals:
+warm gray 900 = #867d78
+warm gray 700 = #9b928d
+warm gray 500 = #ada7a4
+warm gray 300 = #c0bbb7
+warm gray 100 = #e4e0d8
+*/
+
+/* BACKGROUND GRADIENT */
+html {
+    height: 100%;
+}
+section {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+	background: #e4e0d8;
+    background: -webkit-linear-gradient(to bottom, #e4e0d8, #ada7a4);
+    background: linear-gradient(to bottom, #e4e0d8, #ada7a4); 
+}
+
+/*** CHAT CARD STYLES ***/
+/* AI CARD STYLES */
+.aiChat.card {
+	border-radius: 25px 25px 25px 0px;
+}
+.aiChat.card-stacked {
+	background-color: white;
+	border-radius: 0px 25px 25px 0px;
+}
+.aiChat.card-image {
+	color: white;
+	font-weight: 700;
+	border-radius: 25px 0px 0px 0px;
+}
+.ai {
+	background-color: #263172;
+}
+
+/* USER CARD STYLES */
+.userChat.card {
+	border-radius: 25px 25px 0px 25px;
+}
+.userChat.card-stacked {
+	background-color: white;
+	border-radius: 25px 0px 0px 25px;
+}
+.userChat.card-image {
+	color: white;
+	font-weight: 700;
+	border-radius: 0px 25px 0px 0px;
+}
+.user {
+	background-color: #29abe2;
+	text-align: right;
+}
+
+/* TYPOGRAPHY */
+.header {
+	text-align: center;
+}
+.id	{
+	font-weight: 700;
+}
+p {
+	font-size: 1.4rem;
+}
