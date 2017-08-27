@@ -25,10 +25,10 @@ warm gray 300 = #c0bbb7
 warm gray 100 = #e4e0d8
 */
 
+/* BACKGROUND GRADIENT */
 html {
     height: 100%;
 }
-
 body{
 	font-family: 'Raleway', sans-serif;
     height: 100%;
@@ -40,8 +40,9 @@ body{
     background: linear-gradient(to bottom, #94d5f1, #29abe2); 
 }
 
+/* CARDS */
 .card {
-	background: #e4e0d8;
+	background: white;
 }
 
 /* TEXT INPUT AREAS */
@@ -56,6 +57,29 @@ body{
 .row .input-field input:focus {
 	border-bottom: 1px solid #29abe2 !important;
 	box-shadow: 0 1px 0 0 #29abe2 !important
+}
+
+/*** TABS ***/
+/* default tab */
+.tabs .tab a {
+	color: #29abe2;
+	background-color: #eee;
+}
+/* tab on hover */
+.tabs .tab a:hover {
+	background-color: #94d5f1;
+	color: white;
+}
+/* active tab */
+.tabs .tab a.active {
+	font-weight: 700;
+	background-color: white;
+	color:#29abe2;
+} 
+/* active tab underline */
+.tabs .indicator {
+	background-color:#29abe2;
+	height: 6px;
 }
 
 /* TYPOGRAPHY */
