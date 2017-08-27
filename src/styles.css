@@ -32,3 +32,8 @@ body{
     background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
 }
 
+input[type=text]:focus{
+border-bottom: 1px solid black;
+box-shadow: 0 1px 0 0 black;
+}
+
