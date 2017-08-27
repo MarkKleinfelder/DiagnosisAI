@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 /*
-TYPOGRAPHY
+TYPOGRAPHY USED:
 font-family: 'Raleway', sans-serif;
 font-weight: 200, 400, 700;
 font-style: italic;
 */
 
 /*
-COLOR PALETTE:
+COLOR PALETTE USED:
 primary color:
 indigo = #263172
 light indigo = #9398b8
@@ -27,13 +27,68 @@ warm gray 100 = #e4e0d8
 
 body{
 	font-family: 'Raleway', sans-serif;
-    background: #E0EAFC;
-    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
+    background: #94d5f1;
+    background: -webkit-linear-gradient(to bottom, #94d5f1, #29abe2);
+    background: linear-gradient(to bottom, #94d5f1, #29abe2); 
 }
+
 
 input[type=text]:focus{
 border-bottom: 1px solid black;
 box-shadow: 0 1px 0 0 black;
+}
+
+.card {
+	background: #e4e0d8;
+}
+
+
+/* TEXT INPUT AREAS */
+.input-field {
+	width: 80% !important;
+}
+/* label focus color */
+.input-field input:focus + label {
+	color: #29abe2 !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+	border-bottom: 1px solid #29abe2 !important;
+	box-shadow: 0 1px 0 0 #29abe2 !important
+}
+
+/* TYPOGRAPHY */
+h2 {
+	font-weight: 200;
+	color: white;
+}
+
+h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #263172;
+}
+
+p {
+	font-weight: 400;
+	color: black;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/* LINKS */
+.inline-link {
+	font-weight: 700;
+	color: white;
+}
+
+.btn {
+	background-color: #29abe2;
+}
+
+.btn:hover {
+	background-color: #94d5f1;
 }
 
