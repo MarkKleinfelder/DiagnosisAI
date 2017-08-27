@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Patient } from '../patient'
 import { PatientService } from '../patient.service'
-
+import { LoginComponent } from '../login/login.component'
 
 @Component({
   selector: 'app-profile',
@@ -9,24 +9,23 @@ import { PatientService } from '../patient.service'
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-patients:Patient[];
+// patients:Patient[];
 selectedPatient:Patient;
 
 
   constructor(private patientService : PatientService) { }
-
   
-  getPatients(): void {
-  this.patientService.getPatient().then(patients => this.patients = patients) 
-}
+//   getPatients(): void {
+//   this.patientService.getPatient().then(patients => this.patients = patients) 
+// }
 
   ngOnInit():void {
-  	this.getPatients();
+  	//this.getPatients();
   }
 
-  onSelect(patient:Patient):void{
-  	this.selectedPatient = patient;
-  }
+  // onSelect(patient:Patient):void{
+  // 	this.selectedPatient = patient;
+  // }
 
 
 }

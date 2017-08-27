@@ -1,3 +1,12 @@
-<p>
-  login works!
-</p>
+Log in:
+<ul class="patients">
+    <li *ngFor = 'let patient of patients'
+        (click)="onSelect(patient)" [class.selected]="patient===selectedPatient"
+        [routerLink]= "['/profile']">
+        
+   		<span class='badge'>{{patient.id}}</span>{{patient.name}}
+
+    </li>
+</ul>
+
+ <!-- <app-patient-details [patient]='selectedPatient'></app-patient-details> -->

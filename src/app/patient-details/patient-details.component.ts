@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Patient } from '../patient'
-
+import { LoginComponent } from '../login/login.component'
 
 
 @Component({
