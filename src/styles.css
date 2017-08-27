@@ -25,9 +25,17 @@ warm gray 300 = #c0bbb7
 warm gray 100 = #e4e0d8
 */
 
+html {
+    height: 100%;
+}
+
 body{
 	font-family: 'Raleway', sans-serif;
-    background: #94d5f1;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+	background: #94d5f1;
     background: -webkit-linear-gradient(to bottom, #94d5f1, #29abe2);
     background: linear-gradient(to bottom, #94d5f1, #29abe2); 
 }
