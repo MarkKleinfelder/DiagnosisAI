@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 /*
-TYPOGRAPHY
+TYPOGRAPHY USED:
 font-family: 'Raleway', sans-serif;
 font-weight: 200, 400, 700;
 font-style: italic;
 */
 
 /*
-COLOR PALETTE:
+COLOR PALETTE USED:
 primary color:
 indigo = #263172
 light indigo = #9398b8
@@ -31,11 +31,25 @@ body{
     background: -webkit-linear-gradient(to bottom, #94d5f1, #29abe2);
     background: linear-gradient(to bottom, #94d5f1, #29abe2); 
 }
+
 .card {
 	background: #e4e0d8;
 }
 
 
+/* TEXT INPUT AREAS */
+.input-field {
+	width: 80% !important;
+}
+/* label focus color */
+.input-field input:focus + label {
+	color: #29abe2 !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+	border-bottom: 1px solid #29abe2 !important;
+	box-shadow: 0 1px 0 0 #29abe2 !important
+}
 
 /* TYPOGRAPHY */
 h2 {
