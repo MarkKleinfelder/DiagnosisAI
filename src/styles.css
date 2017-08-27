@@ -24,12 +24,34 @@ warm gray 500 = #ada7a4
 warm gray 300 = #c0bbb7
 warm gray 100 = #e4e0d8
 */
+.nav-wrapper {
+	background-color: #263172;
+
+}
+
+.side-nav{
+	z-index: 999;
+}
+.brand-logo {
+	font-weight: 200;
+	color: white;
+}
+
+
+.logoWhiteCir{
+	width: 55px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-bottom: 5px;
+	padding-right: 5px;
+}
 
 body{
 	font-family: 'Raleway', sans-serif;
     background: #94d5f1;
     background: -webkit-linear-gradient(to bottom, #94d5f1, #29abe2);
     background: linear-gradient(to bottom, #94d5f1, #29abe2); 
+    height: 100%;
 }
 
 
