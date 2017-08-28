@@ -1,7 +1,10 @@
+
 <nav>
     <div class="nav-wrapper">
-            <a href="#!" class="brand-logo flow-text">Diagnosis A.I.</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    
+        <a routerLink="/profile" class="brand-logo"><img class="logoWhiteCir responsive-imgs" src="assets/images/logoWhiteCir.png">Diagnosis A.I.</a>
+        <a href="#" data-activates="dropdown1" class="button-collapse"><i class="material-icons">menu</i></a>
+
         <ul class="right hide-on-med-and-down">
             <li>
                 <a routerLink="/signup">Sign Up</a>
@@ -16,8 +19,10 @@
                 <a routerLink="/qa">FAQ</a>
             </li>
         </ul>
+    </div>
+</nav>
 
-        <ul class="side-nav" id="mobile-demo">
+        <ul class="dropdown-content" id="dropdown1">
             <li>
                 <a routerLink="/signup">Sign Up</a>
             </li>
@@ -31,7 +36,15 @@
               <a routerLink="/chat">Chat</a>
             </li>
         </ul>
-    </div>
-</nav>
+
+
 
 <router-outlet></router-outlet>
+
+
+<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+ --><!-- Compiled and minified JavaScript --> 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>  -->
+<!-- <script>
+ $(".button-collapse").sideNav();
+</script> -->

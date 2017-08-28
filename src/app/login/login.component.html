@@ -1,4 +1,18 @@
 <!-- WELCOME MESSAGE -->
+<!-- 
+Log in:
+<ul class="patients">
+    <li *ngFor = 'let patient of patients'
+        (click)="onSelect(patient)" [class.selected]="patient===selectedPatient"
+        [routerLink]= "['/profile']">
+        
+   		<span class='badge'>{{patient.id}}</span>{{patient.name}}
+
+    </li>
+</ul> -->
+
+ <!-- <app-patient-details [patient]='selectedPatient'></app-patient-details> -->
+
 <div class="row">
 	<div class="col s1"></div>
 	<div class="col s10">
@@ -46,3 +60,4 @@
 	</form>
 	<div class="col s1"></div> <!-- WHITE SPACE RIGHT -->
 </div>
+

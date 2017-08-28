@@ -1,7 +1,10 @@
+import { MaterializeModule, MaterializeDirective } from 'angular2-materialize';
+
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { MaterializeModule } from 'angular2-materialize';
+import { NgModule, ApplicationRef } from '@angular/core';
+import 'materialize-css'
 import { RouterModule } from '@angular/router'
+import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -10,6 +13,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { QAComponent } from './q-a/q-a.component';
 import { ChatComponent } from './chat/chat.component';
 import { LinksComponent } from './links/links.component';
+
+import { PatientDetailsComponent } from './patient-details/patient-details.component'
+import { PatientService }  from './patient.service';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 
@@ -22,12 +29,20 @@ import { LinksComponent } from './links/links.component';
     ProfileComponent,
     QAComponent,
     ChatComponent,
-    LinksComponent
+    LinksComponent,
+    PatientDetailsComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     MaterializeModule,
+    FormsModule,
     RouterModule.forRoot([
+      {
+        path:'',
+        component: WelcomeComponent
+      },
+
       {
         path:'profile',
         component: ProfileComponent
@@ -53,7 +68,7 @@ import { LinksComponent } from './links/links.component';
     
 
   ],
-  providers: [],
+  providers: [PatientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
