@@ -71,3 +71,10 @@ h1 {
 p {
 	font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 355px){
+
+section {
+	height: 110%;
+}
+}

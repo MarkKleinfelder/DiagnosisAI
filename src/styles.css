@@ -28,10 +28,6 @@ warm gray 100 = #e4e0d8
 	background-color: #263172;
 	padding-right: 25px;
 	padding-left: 25px;
-
-}
-
-.side-nav{
 }
 
 .dropdown-content li > a{
@@ -152,3 +148,16 @@ p {
 	background-color: #94d5f1;
 }
 
+@media only screen and (max-width: 455px){
+
+  nav .brand-logo {
+	font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 345px){
+
+  nav .brand-logo {
+	font-size: 15px;
+  }
+}
