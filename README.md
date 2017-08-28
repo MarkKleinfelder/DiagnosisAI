@@ -14,6 +14,13 @@ Mark Kleinfelder (https://github.com/MarkKleinfelder) & Ian T. Nordeck (https://
 
 ![STYLEGUIDE](/diagnostic-ai-styles-01.jpg)
 
+## Known Issues
+8/28/17
+* faq tabs - not responsive on initial load, works if you refresh the page.
+* gradient background on chat and faq - if page is larger than window, blue gradient from styles.css appear at bottom of page
+* mobile nav - does not close if you touch outside of nav window
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
