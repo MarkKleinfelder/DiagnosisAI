@@ -1,3 +1,4 @@
+
 <!-- <ul class="patients">
         <li *ngFor = 'let patient of patients'
           (click)="onSelect(patient)" [class.selected]="patient===selectedPatient">
@@ -5,11 +6,43 @@
           {{patient.name}}
         </li>
         </ul> -->
-
-<app-patient-details [patient]='selectedPatient'></app-patient-details>
-
-
-
 <!--************************************************************-->
 
 
+
+<section>
+	<div class="row">
+		<div class="col s1 l2"></div> <!-- WHITE SPACE LEFT -->
+			<div class="col s10 l8">
+				<h4 class="header">Profile</h4>
+				<h2>Welcome [Name].</h2>
+				<p>Diagnosis A.I. is here to provide answers to your questions about your surgery.</p>
+				<h5 class="sectionTitle">scheduled proceedures:</h5>
+			</div>
+		<div class="col s1 l7"></div> <!-- WHITE SPACE RIGHT -->
+	</div>
+
+		<div class="row">
+		<div class="col s1 l2"></div> <!-- WHITE SPACE LEFT -->
+			<div class="card col s10 l8 z-depth-5">
+				<h3>Proceedure</h3>
+				<div class="info row">
+					<div class="col s10 l4">
+						<h5>[Date]</h5>
+					</div>
+					<div class="col s10 l4">
+						<h5>[Doctor]</h5>
+					</div>
+				</div>
+				<div class="links row">
+					<div class="col s10 l4">
+						<h5><a routerLink="/chat"><i class="material-icons">chat</i> chat</a></h5>
+					</div>
+					<div class="col s10 l4">
+						<h5><a routerLink="/qa"><i class="material-icons">live_help</i> faq</a></h5>
+					</div>
+				</div>
+			</div>
+		<div class="col s1 l7"></div> <!-- WHITE SPACE RIGHT -->
+	</div>
+</section>
