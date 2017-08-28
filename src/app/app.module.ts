@@ -1,7 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import 'materialize-css'
 import { MaterializeModule, MaterializeDirective } from 'angular2-materialize';
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, ApplicationRef } from '@angular/core';
+import 'materialize-css'
 import { RouterModule } from '@angular/router'
 import { FormsModule } from '@angular/forms'
 
@@ -15,6 +16,8 @@ import { LinksComponent } from './links/links.component';
 
 import { PatientDetailsComponent } from './patient-details/patient-details.component'
 import { PatientService }  from './patient.service';
+import { WelcomeComponent } from './welcome/welcome.component';
+
 
 
 
@@ -27,13 +30,19 @@ import { PatientService }  from './patient.service';
     QAComponent,
     ChatComponent,
     LinksComponent,
-    PatientDetailsComponent
+    PatientDetailsComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     MaterializeModule,
     FormsModule,
     RouterModule.forRoot([
+      {
+        path:'',
+        component: WelcomeComponent
+      },
+
       {
         path:'profile',
         component: ProfileComponent

@@ -6,8 +6,6 @@ import * as $ from 'jquery';
 import {AfterViewInit} from '@angular/core';    
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import 'materialize-css';
-import 'angular2-materialize'
 
 import { AppModule } from '../app/app.module';
 import { environment } from '../environments/environment';
@@ -18,14 +16,12 @@ import { environment } from '../environments/environment';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent{
   title = 'app';
 
-   ngOnInit():void {
-      // $(".button-collapse").sideNav(); 
-       }
+  ngOnInit(){
+  	(<any>$(".button-collapse")).dropdown()
+  }
 
 }
-
-
    

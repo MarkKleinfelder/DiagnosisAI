@@ -1,0 +1,21 @@
+.whiteCirLarge {
+
+}
+
+#whiteCirLarge{
+	opacity: 1;
+}
+
+.signBtn:hover{
+	
+}
+
+.signBtn {
+	background-color: #263172;
+	margin-right: 25px;
+}
+
+.logBtn {
+	margin-left: 25px;	
+	background-color: #ada7a4;
+}

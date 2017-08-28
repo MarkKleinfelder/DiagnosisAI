@@ -26,12 +26,18 @@ warm gray 100 = #e4e0d8
 */
 .nav-wrapper {
 	background-color: #263172;
+	padding-right: 25px;
+	padding-left: 25px;
 
 }
 
 .side-nav{
-	z-index: 999;
 }
+
+.dropdown-content li > a{
+	color:#263172;
+}
+
 .brand-logo {
 	font-weight: 200;
 	color: white;
