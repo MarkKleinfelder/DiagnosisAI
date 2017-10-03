@@ -6,6 +6,7 @@ import { MaterializeModule, MaterializeDirective } from "angular2-materialize";
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
+declare var require: any;
 
 
 if (environment.production) {
