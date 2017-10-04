@@ -28,8 +28,9 @@ html {
     height: 100%;
 }
 section {
-    height: 100%;
+    /*height: 100%;*/
     margin: 0;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed !important;
 	background: #e4e0d8;
@@ -72,9 +73,9 @@ p {
 	font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 355px){
+/*@media only screen and (max-width: 355px){
 
 section {
 	height: 110%;
 }
-}
+}*/
