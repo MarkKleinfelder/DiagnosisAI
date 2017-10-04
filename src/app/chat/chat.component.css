@@ -27,10 +27,9 @@ warm gray 100 = #e4e0d8
 html {
     height: 100%;
 }
-main {
-    /*height: 100%;*/
+section {
+    height: 100%;
     margin: 0;
-    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed !important;
 	background: #e4e0d8;
@@ -84,9 +83,14 @@ p {
 	font-size: 1.4rem;
 }
 
-/*@media only screen and (max-width: 345px){
-
-main {
-	height: 110%;
+.fcRow{
+	margin-bottom: 0px;
 }
-}*/
+
+@media only screen and (max-width: 355px){
+
+section {
+	background-size: cover;
+	height: initial;
+}
+}
